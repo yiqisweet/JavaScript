@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text">
+<span>+</span><input type="text"><span>=</span>
+<input type="text">
+<button>计算</button>
+<script>
+    window.onload = function () {
+        //1.获取到所有的元素
+        var input = document.getElementsByTagName("input");
+        var but = document.getElementsByTagName("button")[0];
+        but.onclick = function () {
+            //sum(10,20);
+            //从键盘输入的都是字符串
+            sum(parseFloat(input[0].value),parseFloat(input[1].value));
+        };
+        function sum(a,b) {  //多个参数之间用,隔开
+            input[2].value = a + b;
+        }
+    }
+</script>
+</body>
+</html>
