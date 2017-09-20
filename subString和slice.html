@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var str5 = "web前端13232";
+    console.log(str5.substring());//没有参数，截取全部
+    console.log(str5.substring(3));//开始截取的下标位置，一直到结束
+    console.log(str5.substring(5,8));//从5到8,包括5，不包括8 （[start,end)）
+    console.log(str5.substring(5,2)); //b前端，从小的开始查找，即从2开始
+    console.log(str5.substring(3,-9)); //web 负数默认为0（ 0，3）
+    console.log(str5.slice(2,5));
+    console.log(str5.substring(-3));//看成0  从0到末尾
+    console.log(str5.slice(-3));//str5.slice(-i)  截取字符串最后i个字符
+    console.log(str5.substring(3,-5)); //(0,3)
+    console.log(str5.slice(3,-5));  // 正数第三个，倒数第五个
+</script>
+</body>
+</html>
